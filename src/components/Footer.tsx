@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
+
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -9,7 +10,9 @@ const Footer = () => {
       });
     }
   };
-  return <footer className="bg-black text-white py-12 border-t border-amber-600/20">
+
+  return (
+    <footer className="bg-black text-white py-12 border-t border-amber-600/20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
@@ -52,6 +55,11 @@ const Footer = () => {
               <li>
                 <button onClick={() => scrollToSection('missao')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Missão e Valores
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('depoimentos')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
+                  Depoimentos
                 </button>
               </li>
               <li>
@@ -111,6 +119,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
