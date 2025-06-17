@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, Instagram } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -130,6 +130,24 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
                   <h4 className="font-semibold text-white mb-1">Horário de Funcionamento</h4>
                   <p className="text-gray-300">Segunda à Sexta: 8h às 18h</p>
                   <p className="text-sm text-gray-400">Atendimento presencial e online</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="bg-gradient-to-r from-pink-500 to-purple-500 p-3 rounded-full">
+                  <Instagram className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-white mb-1">Instagram</h4>
+                  <a 
+                    href="https://www.instagram.com/marianocontabilidades?igsh=Ynhwa2d4ZDh0MnFu" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-amber-400 hover:text-amber-300 transition-colors"
+                  >
+                    @marianocontabilidades
+                  </a>
+                  <p className="text-sm text-gray-400">Siga-nos para dicas e novidades</p>
                 </div>
               </div>
             </div>

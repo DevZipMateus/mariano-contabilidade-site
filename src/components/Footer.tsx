@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Heart, Instagram, Users } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, Users } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -38,19 +38,6 @@ const Footer = () => {
             <p className="text-amber-400 font-medium italic text-sm sm:text-base">
               "Assumimos a contabilidade dos nossos clientes como se fosse nossa"
             </p>
-            
-            {/* Instagram Link */}
-            <div className="mt-4">
-              <a 
-                href="https://www.instagram.com/marianocontabilidades?igsh=Ynhwa2d4ZDh0MnFu" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-amber-400 hover:text-amber-300 transition-colors"
-              >
-                <Instagram className="h-4 sm:h-5 w-4 sm:w-5" />
-                <span className="text-sm sm:text-base">@marianocontabilidades</span>
-              </a>
-            </div>
           </div>
 
           {/* Links Rápidos */}
