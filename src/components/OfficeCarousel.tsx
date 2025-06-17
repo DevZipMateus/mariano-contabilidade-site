@@ -8,38 +8,23 @@ const OfficeCarousel = () => {
   const officeImages = [
     {
       id: 1,
-      src: "/lovable-uploads/b379372c-af0e-40c8-9ee7-a0561f6750a8.png",
+      src: "/lovable-uploads/420b4bca-f540-44ce-9d47-2ce8a4afd333.png",
       alt: "Escritório Mariano Contabilidade - Ambiente de trabalho"
     },
     {
       id: 2,
-      src: "/lovable-uploads/5affc37c-c4d3-4d83-9c1c-4d99c1e3ed22.png",
+      src: "/lovable-uploads/e2312770-9bad-4de1-8c0c-edb919ee74bd.png",
       alt: "Equipe Mariano Contabilidade no escritório"
     },
     {
       id: 3,
-      src: "/lovable-uploads/a722bd15-bce2-4dc0-9df8-f58a884497cd.png",
-      alt: "Equipe Mariano Contabilidade reunida"
+      src: "/lovable-uploads/1923305f-4e32-4add-8328-a95706526dd7.png",
+      alt: "Espaço de trabalho da equipe"
     },
     {
       id: 4,
-      src: "/lovable-uploads/a0615a0e-25e5-4a4d-a337-cdd09af39d1d.png",
-      alt: "Espaço de atendimento do escritório"
-    },
-    {
-      id: 5,
-      src: "/lovable-uploads/07655888-322a-4353-822d-10d67240cca4.png",
-      alt: "Área de trabalho da equipe"
-    },
-    {
-      id: 6,
-      src: "/lovable-uploads/4fd04c1a-47d2-4adc-b5bd-62bcf9e9d8a2.png",
-      alt: "Vista geral do escritório"
-    },
-    {
-      id: 7,
-      src: "/lovable-uploads/141a9e93-c0ee-4d7c-9715-779bede35e85.png",
-      alt: "Fachada do escritório Mariano Contabilidade"
+      src: "/lovable-uploads/f0db27d1-9e0f-4bb2-986c-6d87f1f352de.png",
+      alt: "Área de atendimento do escritório"
     }
   ];
 
