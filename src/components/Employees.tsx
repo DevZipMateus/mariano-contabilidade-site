@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -9,35 +8,35 @@ const Employees = () => {
       id: 1,
       name: "Jackson",
       position: "Contador - Setor de Suporte e Mentoria",
-      image: "/lovable-uploads/58eba7ca-3554-4b4f-953a-16fc6603f4ef.png",
+      image: "/lovable-uploads/81a31972-7313-419e-a2c3-6ff86461c215.png",
       description: "Especialista em contabilidade empresarial com mais de 15 anos de experiência."
     },
     {
       id: 2,
       name: "Mariana",
       position: "Setor de Atendimento ao Cliente",
-      image: "/lovable-uploads/e3746a72-5bbc-4cc9-ab30-8bcca99e20eb.png",
+      image: "/lovable-uploads/c3737cad-82c3-4240-afc9-0421d8426ee5.png",
       description: "Responsável pelo atendimento ao cliente e processamento de documentos."
     },
     {
       id: 3,
       name: "Mariano Junior",
       position: "Contador - Setor Fiscal",
-      image: "/lovable-uploads/09a23d1e-f4a6-4d37-b827-b54c416ba0dc.png",
+      image: "/lovable-uploads/550b1856-b498-424e-b3d1-778a284729ec.png",
       description: "Especialista em MEI e Simples Nacional, focado em pequenas empresas."
     },
     {
       id: 4,
       name: "Paloma Mariano",
       position: "Setor Pessoal",
-      image: "/lovable-uploads/83aab254-deb2-433f-a31a-e3d9dce47a4d.png",
+      image: "/lovable-uploads/8d5c4d41-1288-4567-9011-1c047bb46d91.png",
       description: "Responsável pela parte fiscal e tributária dos nossos clientes."
     },
     {
       id: 5,
       name: "Ubiratan",
       position: "Setor Legalização",
-      image: "/lovable-uploads/6914000a-2e95-4f6b-84b2-bd694b640489.png",
+      image: "/lovable-uploads/17f95454-5c14-4473-a5ce-ee0f4440bb6d.png",
       description: "Consultor especializado em planejamento tributário e estratégias fiscais."
     }
   ];
