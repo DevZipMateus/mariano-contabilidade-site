@@ -8,13 +8,13 @@ const OfficeCarousel = () => {
   const officeImages = [
     {
       id: 1,
-      src: "/lovable-uploads/420b4bca-f540-44ce-9d47-2ce8a4afd333.png",
-      alt: "Escritório Mariano Contabilidade - Ambiente de trabalho"
+      src: "/lovable-uploads/e2312770-9bad-4de1-8c0c-edb919ee74bd.png",
+      alt: "Equipe Mariano Contabilidade no escritório"
     },
     {
       id: 2,
-      src: "/lovable-uploads/e2312770-9bad-4de1-8c0c-edb919ee74bd.png",
-      alt: "Equipe Mariano Contabilidade no escritório"
+      src: "/lovable-uploads/420b4bca-f540-44ce-9d47-2ce8a4afd333.png",
+      alt: "Escritório Mariano Contabilidade - Ambiente de trabalho"
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ const OfficeCarousel = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Carousel className="w-full">
             <CarouselContent>
               {officeImages.map((image, index) => (
@@ -65,22 +65,27 @@ const OfficeCarousel = () => {
                     display: index === currentIndex ? 'block' : 'none'
                   }}
                 >
-                  <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+                  <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
                     <picture>
                       <source 
                         media="(max-width: 640px)" 
                         srcSet={image.src} 
-                        sizes="(max-width: 640px) 100vw, 50vw"
+                        sizes="100vw"
+                      />
+                      <source 
+                        media="(max-width: 1024px)" 
+                        srcSet={image.src} 
+                        sizes="90vw"
                       />
                       <img 
                         src={image.src}
                         alt={image.alt}
                         className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
                         loading={index === 0 ? "eager" : "lazy"}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1200px"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
                       />
                     </picture>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>
                 </CarouselItem>
               ))}
