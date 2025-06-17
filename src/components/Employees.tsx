@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -7,36 +6,36 @@ const Employees = () => {
   const employees = [
     {
       id: 1,
-      name: "João Mariano",
-      position: "Contador Responsável",
+      name: "Jackson",
+      position: "Contador - Setor de Suporte e Mentoria",
       image: "/lovable-uploads/58eba7ca-3554-4b4f-953a-16fc6603f4ef.png",
       description: "Especialista em contabilidade empresarial com mais de 15 anos de experiência."
     },
     {
       id: 2,
-      name: "Maria Silva",
-      position: "Assistente Contábil",
+      name: "Mariana",
+      position: "Setor de Atendimento ao Cliente",
       image: "/lovable-uploads/e3746a72-5bbc-4cc9-ab30-8bcca99e20eb.png",
       description: "Responsável pelo atendimento ao cliente e processamento de documentos."
     },
     {
       id: 3,
-      name: "Carlos Santos",
-      position: "Contador Júnior",
+      name: "Mariano Junior",
+      position: "Contador - Setor Fiscal",
       image: "/lovable-uploads/09a23d1e-f4a6-4d37-b827-b54c416ba0dc.png",
       description: "Especialista em MEI e Simples Nacional, focado em pequenas empresas."
     },
     {
       id: 4,
-      name: "Ana Paula",
-      position: "Analista Fiscal",
+      name: "Paloma Mariano",
+      position: "Setor Pessoal",
       image: "/lovable-uploads/83aab254-deb2-433f-a31a-e3d9dce47a4d.png",
       description: "Responsável pela parte fiscal e tributária dos nossos clientes."
     },
     {
       id: 5,
-      name: "Roberto Lima",
-      position: "Consultor Contábil",
+      name: "Ubiratan",
+      position: "Setor Legalização",
       image: "/lovable-uploads/6914000a-2e95-4f6b-84b2-bd694b640489.png",
       description: "Consultor especializado em planejamento tributário e estratégias fiscais."
     }
