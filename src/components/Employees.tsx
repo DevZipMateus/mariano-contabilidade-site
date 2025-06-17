@@ -8,7 +8,7 @@ const Employees = () => {
       id: 1,
       name: "Jackson",
       position: "Contador - Setor de Suporte e Mentoria",
-      image: "/lovable-uploads/550b1856-b498-424e-b3d1-778a284729ec.png",
+      image: "/lovable-uploads/17f95454-5c14-4473-a5ce-ee0f4440bb6d.png",
       description: "Especialista em contabilidade empresarial com mais de 15 anos de experiência."
     },
     {
@@ -22,7 +22,7 @@ const Employees = () => {
       id: 3,
       name: "Mariano Junior",
       position: "Contador - Setor Fiscal",
-      image: "/lovable-uploads/17f95454-5c14-4473-a5ce-ee0f4440bb6d.png",
+      image: "/lovable-uploads/81a31972-7313-419e-a2c3-6ff86461c215.png",
       description: "Especialista em MEI e Simples Nacional, focado em pequenas empresas."
     },
     {
@@ -36,7 +36,7 @@ const Employees = () => {
       id: 5,
       name: "Ubiratan",
       position: "Setor Legalização",
-      image: "/lovable-uploads/81a31972-7313-419e-a2c3-6ff86461c215.png",
+      image: "/lovable-uploads/550b1856-b498-424e-b3d1-778a284729ec.png",
       description: "Consultor especializado em planejamento tributário e estratégias fiscais."
     }
   ];
