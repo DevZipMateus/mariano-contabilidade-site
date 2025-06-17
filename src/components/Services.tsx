@@ -3,6 +3,9 @@ import React from 'react';
 import { FileText, Calculator, Building, Users, MapPin, Headphones, CheckCircle, Briefcase } from 'lucide-react';
 
 const Services = () => {
+  const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços da Mariano Contabilidade.";
+  const whatsappUrl = `https://wa.me/5585982384438?text=${encodeURIComponent(whatsappMessage)}`;
+
   const services = [
     {
       icon: Building,
@@ -125,7 +128,7 @@ const Services = () => {
                 Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer 
                 com organização e tranquilidade.
               </p>
-              <div className="space-y-3">
+              <div className="space-y-3 mb-6">
                 <div className="flex items-center">
                   <div className="bg-amber-600 p-2 rounded-full mr-3">
                     <Headphones className="h-4 w-4 text-black" />
@@ -145,6 +148,16 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+              
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center justify-center"
+              >
+                <Headphones className="h-5 w-5 mr-2" />
+                Falar no WhatsApp
+              </a>
             </div>
           </div>
         </div>
