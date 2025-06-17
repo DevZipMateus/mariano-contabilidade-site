@@ -61,18 +61,14 @@ const Employees = () => {
             <Card key={employee.id} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 group">
               <CardContent className="p-3 sm:p-4 lg:p-6 xl:p-8 text-center">
                 <div className="mb-3 sm:mb-4 lg:mb-6">
-                  <Avatar className="w-16 sm:w-20 lg:w-24 xl:w-32 2xl:w-36 h-16 sm:h-20 lg:h-24 xl:h-32 2xl:h-36 mx-auto mb-2 sm:mb-3 lg:mb-4 ring-4 ring-amber-500/20 group-hover:ring-amber-500/40 transition-all">
-                    <AvatarImage 
+                  <div className="w-16 sm:w-20 lg:w-24 xl:w-32 2xl:w-36 h-16 sm:h-20 lg:h-24 xl:h-32 2xl:h-36 mx-auto mb-2 sm:mb-3 lg:mb-4 rounded-lg overflow-hidden ring-4 ring-amber-500/20 group-hover:ring-amber-500/40 transition-all bg-gray-700">
+                    <img 
                       src={employee.image} 
                       alt={employee.name}
-                      className="object-cover"
+                      className="w-full h-full object-contain"
                       loading="lazy"
-                      sizes="(max-width: 640px) 64px, (max-width: 1024px) 96px, (max-width: 1280px) 128px, 144px"
                     />
-                    <AvatarFallback className="bg-amber-500 text-black text-sm sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold">
-                      {employee.name.split(' ').map(n => n[0]).join('')}
-                    </AvatarFallback>
-                  </Avatar>
+                  </div>
                 </div>
                 
                 <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-white mb-1 sm:mb-2">
