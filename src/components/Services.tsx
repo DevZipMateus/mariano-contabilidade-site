@@ -8,60 +8,60 @@ const Services = () => {
       icon: Building,
       title: "Abertura e Regularização de Empresas",
       description: "Processo completo de abertura de MEI, EIRELI, LTDA e regularização empresarial.",
-      color: "bg-blue-600"
+      color: "bg-amber-600"
     },
     {
       icon: FileText,
       title: "Declaração do Imposto de Renda",
       description: "Pessoa Física e Jurídica com segurança e dentro dos prazos legais.",
-      color: "bg-green-600"
+      color: "bg-amber-600"
     },
     {
       icon: Calculator,
       title: "Emissão de Notas Fiscais",
       description: "Controle e emissão de notas fiscais e cumprimento de obrigações mensais.",
-      color: "bg-orange-600"
+      color: "bg-amber-600"
     },
     {
       icon: Users,
       title: "Folha de Pagamento",
       description: "Gestão completa da folha de pagamento e obrigações trabalhistas.",
-      color: "bg-purple-600"
+      color: "bg-amber-600"
     },
     {
       icon: MapPin,
       title: "Endereço Fiscal",
       description: "Serviços de endereço fiscal e escritório virtual para sua empresa.",
-      color: "bg-red-600"
+      color: "bg-amber-600"
     },
     {
       icon: Headphones,
       title: "Consultoria MEI",
       description: "Orientação especializada para microempreendedores individuais.",
-      color: "bg-indigo-600"
+      color: "bg-amber-600"
     },
     {
       icon: Briefcase,
       title: "Atendimento Personalizado",
       description: "Atendimento presencial e consultoria sob medida para seu negócio.",
-      color: "bg-teal-600"
+      color: "bg-amber-600"
     },
     {
       icon: CheckCircle,
       title: "Simples Nacional",
       description: "Especialistas em enquadramento e gestão do Simples Nacional.",
-      color: "bg-cyan-600"
+      color: "bg-amber-600"
     }
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-gray-50">
+    <section id="servicos" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Nossos Serviços
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Soluções contábeis completas para MEIs, pequenas empresas e negócios do Simples Nacional
           </p>
         </div>
@@ -70,78 +70,78 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group"
+              className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-amber-600/20 hover:border-amber-600/40 transition-all duration-300 hover:-translate-y-1 group"
             >
               <div className={`${service.color} p-3 rounded-lg w-14 h-14 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className="h-7 w-7 text-white" />
+                <service.icon className="h-7 w-7 text-black" />
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-3">{service.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+              <h3 className="text-lg font-bold text-white mb-3">{service.title}</h3>
+              <p className="text-gray-300 text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
+        <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-amber-600/20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
                 Por que escolher nossos serviços?
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-amber-400 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-800">Especialização em MEI e Simples Nacional</h4>
-                    <p className="text-gray-600 text-sm">Conhecimento profundo das regras e benefícios destes regimes tributários.</p>
+                    <h4 className="font-semibold text-white">Especialização em MEI e Simples Nacional</h4>
+                    <p className="text-gray-300 text-sm">Conhecimento profundo das regras e benefícios destes regimes tributários.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-amber-400 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-800">Atendimento Presencial</h4>
-                    <p className="text-gray-600 text-sm">Relacionamento próximo e atendimento personalizado em nosso escritório.</p>
+                    <h4 className="font-semibold text-white">Atendimento Presencial</h4>
+                    <p className="text-gray-300 text-sm">Relacionamento próximo e atendimento personalizado em nosso escritório.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-amber-400 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-800">Linguagem Simples</h4>
-                    <p className="text-gray-600 text-sm">Explicamos tudo de forma clara e acessível, sem complicações.</p>
+                    <h4 className="font-semibold text-white">Linguagem Simples</h4>
+                    <p className="text-gray-300 text-sm">Explicamos tudo de forma clara e acessível, sem complicações.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-amber-400 mr-3 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-gray-800">Cumprimento de Prazos</h4>
-                    <p className="text-gray-600 text-sm">Pontualidade e organização em todas as obrigações e entregas.</p>
+                    <h4 className="font-semibold text-white">Cumprimento de Prazos</h4>
+                    <p className="text-gray-300 text-sm">Pontualidade e organização em todas as obrigações e entregas.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">Precisa de ajuda?</h4>
-              <p className="text-gray-600 mb-6">
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-amber-600/20">
+              <h4 className="text-xl font-bold text-white mb-4">Precisa de ajuda?</h4>
+              <p className="text-gray-300 mb-6">
                 Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer 
                 com organização e tranquilidade.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <div className="bg-blue-600 p-2 rounded-full mr-3">
-                    <Headphones className="h-4 w-4 text-white" />
+                  <div className="bg-amber-600 p-2 rounded-full mr-3">
+                    <Headphones className="h-4 w-4 text-black" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Telefone/WhatsApp</p>
-                    <p className="text-blue-600">(85) 9 8238-4438</p>
+                    <p className="font-semibold text-white">Telefone/WhatsApp</p>
+                    <p className="text-amber-400">(85) 9 8238-4438</p>
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="bg-blue-600 p-2 rounded-full mr-3">
-                    <FileText className="h-4 w-4 text-white" />
+                  <div className="bg-amber-600 p-2 rounded-full mr-3">
+                    <FileText className="h-4 w-4 text-black" />
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">E-mail</p>
-                    <p className="text-blue-600">marianocontabilidade@hotmail.com</p>
+                    <p className="font-semibold text-white">E-mail</p>
+                    <p className="text-amber-400">marianocontabilidade@hotmail.com</p>
                   </div>
                 </div>
               </div>
