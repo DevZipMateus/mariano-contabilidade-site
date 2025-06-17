@@ -1,27 +1,21 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <footer className="bg-black text-white py-12 border-t border-amber-600/20">
+  return <footer className="bg-black text-white py-12 border-t border-amber-600/20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/lovable-uploads/a2c0f4ea-e371-4050-a863-687d3a8d7cc9.png" 
-                alt="Mariano Contabilidade Logo" 
-                className="h-10 w-auto"
-              />
+              <img src="/lovable-uploads/a2c0f4ea-e371-4050-a863-687d3a8d7cc9.png" alt="Mariano Contabilidade Logo" className="h-10 w-auto" />
               <div>
                 <h3 className="text-xl font-bold text-white">Mariano Contabilidade</h3>
                 <p className="text-sm text-amber-400">Contabilidade Humanizada</p>
@@ -41,42 +35,27 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4 text-white">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => scrollToSection('inicio')}
-                  className="text-gray-300 hover:text-amber-400 transition-colors text-left"
-                >
+                <button onClick={() => scrollToSection('inicio')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Início
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('sobre')}
-                  className="text-gray-300 hover:text-amber-400 transition-colors text-left"
-                >
+                <button onClick={() => scrollToSection('sobre')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Sobre Nós
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('servicos')}
-                  className="text-gray-300 hover:text-amber-400 transition-colors text-left"
-                >
+                <button onClick={() => scrollToSection('servicos')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Serviços
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('missao')}
-                  className="text-gray-300 hover:text-amber-400 transition-colors text-left"
-                >
+                <button onClick={() => scrollToSection('missao')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Missão e Valores
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contato')}
-                  className="text-gray-300 hover:text-amber-400 transition-colors text-left"
-                >
+                <button onClick={() => scrollToSection('contato')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Contato
                 </button>
               </li>
@@ -115,7 +94,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            <p>&copy; 2024 Mariano Contabilidade. Todos os direitos reservados.</p>
+            <p>© 2025 Mariano Contabilidade. Todos os direitos reservados.</p>
           </div>
           
           <div className="flex items-center text-gray-400 text-sm">
@@ -132,8 +111,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
