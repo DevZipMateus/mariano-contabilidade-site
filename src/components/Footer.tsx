@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Phone, Mail, MapPin, Heart, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, Instagram, Users } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -129,6 +128,26 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Responsáveis Técnicos */}
+        <div className="mt-8 sm:mt-10 border-t border-gray-800 pt-6 sm:pt-8">
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <Users className="h-5 w-5 text-amber-400" />
+              <h4 className="text-lg sm:text-xl font-bold text-white">Responsáveis Técnicos</h4>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+                <p className="text-amber-400 font-medium text-sm sm:text-base">Mariano Junior</p>
+                <p className="text-gray-300 text-xs sm:text-sm">CRC: 014818</p>
+              </div>
+              <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
+                <p className="text-amber-400 font-medium text-sm sm:text-base">Paloma Mariano</p>
+                <p className="text-gray-300 text-xs sm:text-sm">CRC: CE-027945/O</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <hr className="border-gray-800 my-6 sm:my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
@@ -145,8 +164,8 @@ const Footer = () => {
 
         <div className="mt-4 sm:mt-6 text-center">
           <p className="text-xs text-gray-500">
-            CNPJ: XX.XXX.XXX/XXXX-XX | CRC: XXXXX | 
-            Responsável Técnico: [Nome do Responsável] - CRC XXXXX
+            CNPJ: XX.XXX.XXX/XXXX-XX | 
+            Responsáveis Técnicos: Mariano Junior - CRC 014818 | Paloma Mariano - CRC CE-027945/O
           </p>
         </div>
       </div>
