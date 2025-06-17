@@ -77,3 +77,42 @@
     background: hsl(30, 40%, 65%);
   }
 }
+
+/* Responsive utilities */
+@layer utilities {
+  .line-clamp-6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Ensure images are responsive by default */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Better text rendering */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Touch targets for mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+    }
+  }
+}
