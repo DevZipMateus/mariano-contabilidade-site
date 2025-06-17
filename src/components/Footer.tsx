@@ -138,7 +138,7 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
               <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
                 <p className="text-amber-400 font-medium text-sm sm:text-base">Mariano Junior</p>
-                <p className="text-gray-300 text-xs sm:text-sm">CRC: 014818</p>
+                <p className="text-gray-300 text-xs sm:text-sm">CRC: CE-014818/O-5</p>
               </div>
               <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
                 <p className="text-amber-400 font-medium text-sm sm:text-base">Paloma Mariano</p>
@@ -165,7 +165,7 @@ const Footer = () => {
         <div className="mt-4 sm:mt-6 text-center">
           <p className="text-xs text-gray-500">
             CNPJ: XX.XXX.XXX/XXXX-XX | 
-            Responsáveis Técnicos: Mariano Junior - CRC 014818 | Paloma Mariano - CRC CE-027945/O
+            Responsáveis Técnicos: Mariano Junior - CRC CE-014818/O-5 | Paloma Mariano - CRC CE-027945/O
           </p>
         </div>
       </div>
