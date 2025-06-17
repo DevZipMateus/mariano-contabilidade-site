@@ -33,11 +33,18 @@ const Contact = () => {
       return;
     }
 
-    // Simular envio (aqui você integraria com um backend real)
-    toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve. Obrigado!"
-    });
+    // Criar mensagem personalizada para WhatsApp
+    const whatsappMessage = `Olá! Meu nome é ${formData.name}. 
+
+${formData.message}
+
+Meu e-mail: ${formData.email}
+${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
+
+    const whatsappUrl = `https://wa.me/5585982384438?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Abrir WhatsApp
+    window.open(whatsappUrl, '_blank');
 
     // Limpar formulário
     setFormData({
@@ -45,6 +52,11 @@ const Contact = () => {
       email: '',
       phone: '',
       message: ''
+    });
+
+    toast({
+      title: "Redirecionando para WhatsApp",
+      description: "Você será redirecionado para nossa conversa no WhatsApp!"
     });
   };
 
@@ -130,7 +142,11 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium"
               >
-                <MessageCircle className="h-5 w-5 mr-2" />
+                <img 
+                  src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
+                  alt="WhatsApp"
+                  className="h-5 w-5 mr-2"
+                />
                 Falar no WhatsApp
               </a>
             </div>
@@ -176,6 +192,21 @@ const Contact = () => {
               </div>
 
               <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
+                  Telefone (opcional)
+                </label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  value={formData.phone} 
+                  onChange={handleInputChange} 
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" 
+                  placeholder="(85) 9 1234-5678" 
+                />
+              </div>
+
+              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Mensagem *
                 </label>
@@ -193,10 +224,14 @@ const Contact = () => {
 
               <button 
                 type="submit" 
-                className="w-full bg-amber-600 text-black py-3 px-6 rounded-lg hover:bg-amber-500 transition-colors font-medium flex items-center justify-center"
+                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center justify-center"
               >
-                <Send className="h-5 w-5 mr-2" />
-                Enviar Mensagem
+                <img 
+                  src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
+                  alt="WhatsApp"
+                  className="h-5 w-5 mr-2"
+                />
+                Enviar via WhatsApp
               </button>
             </form>
 

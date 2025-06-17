@@ -131,7 +131,11 @@ const Services = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center">
                   <div className="bg-amber-600 p-2 rounded-full mr-3">
-                    <Headphones className="h-4 w-4 text-black" />
+                    <img 
+                      src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
+                      alt="WhatsApp"
+                      className="h-4 w-4"
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-white">Telefone/WhatsApp</p>
@@ -155,7 +159,11 @@ const Services = () => {
                 rel="noopener noreferrer"
                 className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center justify-center"
               >
-                <Headphones className="h-5 w-5 mr-2" />
+                <img 
+                  src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
+                  alt="WhatsApp"
+                  className="h-5 w-5 mr-2"
+                />
                 Falar no WhatsApp
               </a>
             </div>
