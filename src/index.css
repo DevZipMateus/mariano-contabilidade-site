@@ -115,4 +115,41 @@
       min-height: 44px;
     }
   }
+
+  /* Enhanced responsive breakpoints for 1920x1080 and beyond */
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 1800px;
+    }
+  }
+
+  /* Ultra-wide screen optimizations */
+  @media (min-width: 2560px) {
+    .container {
+      max-width: 2400px;
+    }
+  }
+
+  /* High DPI screen optimizations */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+  }
+
+  /* Mobile-first improvements */
+  @media (max-width: 480px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  /* Tablet landscape optimizations */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
 }
