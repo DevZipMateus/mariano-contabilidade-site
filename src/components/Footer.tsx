@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Heart } from 'lucide-react';
 
@@ -61,6 +60,11 @@ const Footer = () => {
               <li>
                 <button onClick={() => scrollToSection('funcionarios')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
                   Nossa Equipe
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('escritorio')} className="text-gray-300 hover:text-amber-400 transition-colors text-left">
+                  Nosso Escritório
                 </button>
               </li>
               <li>
