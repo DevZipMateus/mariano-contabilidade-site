@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin, Heart, Users } from 'lucide-react';
 
@@ -151,7 +152,7 @@ const Footer = () => {
 
         <div className="mt-4 sm:mt-6 text-center">
           <p className="text-xs text-gray-500">
-            CNPJ: XX.XXX.XXX/XXXX-XX | 
+            CNPJ: 44.448.908/0001-38 | 
             Responsáveis Técnicos: Mariano Junior - CRC CE-014818/O-5 | Paloma Mariano - CRC CE-027945/O
           </p>
         </div>

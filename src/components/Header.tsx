@@ -49,7 +49,7 @@ const Header = () => {
                 Mariano Contabilidade
               </h1>
               <p className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-amber-400 font-medium truncate">
-                Contabilidade Humanizada
+                Especialista em MEI e Simples Nacional
               </p>
             </div>
           </div>
