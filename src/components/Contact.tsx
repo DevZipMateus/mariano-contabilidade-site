@@ -1,25 +1,26 @@
-
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, Instagram } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: ''
   });
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -40,9 +41,8 @@ ${formData.message}
 
 Meu e-mail: ${formData.email}
 ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
-
     const whatsappUrl = `https://wa.me/5585982384438?text=${encodeURIComponent(whatsappMessage)}`;
-    
+
     // Abrir WhatsApp
     window.open(whatsappUrl, '_blank');
 
@@ -53,18 +53,14 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
       phone: '',
       message: ''
     });
-
     toast({
       title: "Redirecionando para WhatsApp",
       description: "Você será redirecionado para nossa conversa no WhatsApp!"
     });
   };
-
   const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços da Mariano Contabilidade.";
   const whatsappUrl = `https://wa.me/5585982384438?text=${encodeURIComponent(whatsappMessage)}`;
-
-  return (
-    <section id="contato" className="py-20 bg-black">
+  return <section id="contato" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
@@ -118,7 +114,7 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
                 <div>
                   <h4 className="font-semibold text-white mb-1">Localização</h4>
                   <p className="text-gray-300">Fortaleza - CE</p>
-                  <p className="text-sm text-gray-400">No coração da cidade</p>
+                  <p className="text-sm text-gray-400">RUA CASTRO E SILVA 942 CENTRO FORTALEZA - CE CEP: 60030-010</p>
                 </div>
               </div>
 
@@ -139,12 +135,7 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Instagram</h4>
-                  <a 
-                    href="https://www.instagram.com/marianocontabilidades?igsh=Ynhwa2d4ZDh0MnFu" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-amber-400 hover:text-amber-300 transition-colors"
-                  >
+                  <a href="https://www.instagram.com/marianocontabilidades?igsh=Ynhwa2d4ZDh0MnFu" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors">
                     @marianocontabilidades
                   </a>
                   <p className="text-sm text-gray-400">Siga-nos para dicas e novidades</p>
@@ -154,17 +145,8 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
 
             {/* Botão WhatsApp */}
             <div className="pt-6">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium"
-              >
-                <img 
-                  src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
-                  alt="WhatsApp"
-                  className="h-5 w-5 mr-2"
-                />
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                <img src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png" alt="WhatsApp" className="h-5 w-5 mr-2" />
                 Falar no WhatsApp
               </a>
             </div>
@@ -181,74 +163,32 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Nome Completo *
                 </label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  value={formData.name} 
-                  onChange={handleInputChange} 
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" 
-                  placeholder="Seu nome completo" 
-                  required 
-                />
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" placeholder="Seu nome completo" required />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                   E-mail *
                 </label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  value={formData.email} 
-                  onChange={handleInputChange} 
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" 
-                  placeholder="seu@email.com" 
-                  required 
-                />
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" placeholder="seu@email.com" required />
               </div>
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
                   Telefone (opcional)
                 </label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone" 
-                  value={formData.phone} 
-                  onChange={handleInputChange} 
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" 
-                  placeholder="(85) 9 1234-5678" 
-                />
+                <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors text-white placeholder-gray-400" placeholder="(85) 9 1234-5678" />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Mensagem *
                 </label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  value={formData.message} 
-                  onChange={handleInputChange} 
-                  rows={5} 
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors resize-none text-white placeholder-gray-400" 
-                  placeholder="Como podemos ajudar você? Conte-nos sobre seu negócio e suas necessidades..." 
-                  required 
-                />
+                <textarea id="message" name="message" value={formData.message} onChange={handleInputChange} rows={5} className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-colors resize-none text-white placeholder-gray-400" placeholder="Como podemos ajudar você? Conte-nos sobre seu negócio e suas necessidades..." required />
               </div>
 
-              <button 
-                type="submit" 
-                className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center justify-center"
-              >
-                <img 
-                  src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png"
-                  alt="WhatsApp"
-                  className="h-5 w-5 mr-2"
-                />
+              <button type="submit" className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center justify-center">
+                <img src="/lovable-uploads/9bd6a7da-f007-4903-a3b5-6a7e1c4e6a47.png" alt="WhatsApp" className="h-5 w-5 mr-2" />
                 Enviar via WhatsApp
               </button>
             </form>
@@ -262,8 +202,6 @@ ${formData.phone ? `Telefone: ${formData.phone}` : ''}`;
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
