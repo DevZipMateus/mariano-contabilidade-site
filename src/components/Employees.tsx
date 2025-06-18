@@ -7,7 +7,8 @@ const Employees = () => {
     {
       id: 1,
       name: "Jackson Pereira",
-      position: "Contador – CRC: CE-026056-O/5",
+      position: "Contador",
+      crc: "CRC: CE-026056-O/5",
       sector: "Setor de mentoria e suporte contábil",
       image: "/lovable-uploads/17f95454-5c14-4473-a5ce-ee0f4440bb6d.png",
       description: "Responsável pelo apoio técnico e estratégico para os contadores e as empresas, com orientações personalizadas, revisão de processos e atualizações normativas. Soluções práticas para o dia a dia do escritório contábil."
@@ -16,6 +17,7 @@ const Employees = () => {
       id: 2,
       name: "Mariana Rodrigues",
       position: "Secretaria",
+      crc: null,
       sector: "Setor de atendimento ao cliente",
       image: "/lovable-uploads/c3737cad-82c3-4240-afc9-0421d8426ee5.png",
       description: "Responsável por acolher, orientar e acompanhar clientes em todas as etapas do serviço. Atua com foco em agilidade, clareza na comunicação e excelência no relacionamento, garantindo uma experiência humanizada e eficiente."
@@ -23,7 +25,8 @@ const Employees = () => {
     {
       id: 3,
       name: "Mariano Junior",
-      position: "Contador – CRC: CE-014818/O-5",
+      position: "Contador",
+      crc: "CRC: CE-014818/O-5",
       sector: "Setor Fiscal tributário",
       image: "/lovable-uploads/81a31972-7313-419e-a2c3-6ff86461c215.png",
       description: "Responsável pela apuração de impostos, entrega de obrigações acessórias e orientação sobre regimes tributários. Atua com foco na conformidade fiscal e no planejamento tributário estratégico para empresas de diversos portes."
@@ -31,7 +34,8 @@ const Employees = () => {
     {
       id: 4,
       name: "Paloma Mariano",
-      position: "Contadora – CRC: CE-027945/O-5",
+      position: "Contadora",
+      crc: "CRC: CE-027945/O-5",
       sector: "Setor Administrativo e departamento pessoal",
       image: "/lovable-uploads/8d5c4d41-1288-4567-9011-1c047bb46d91.png",
       description: "Responsável pela gestão interna, organização de processos e rotinas trabalhistas. Atua garantindo eficiência operacional, conformidade legal e suporte completo ao cliente e à equipe."
@@ -39,7 +43,8 @@ const Employees = () => {
     {
       id: 5,
       name: "Ubiratan Oliveira",
-      position: "Contador – CRC: CE-014574-O/8",
+      position: "Contador",
+      crc: "CRC: CE-014574-O/8",
       sector: "Setor de Legalização",
       image: "/lovable-uploads/550b1856-b498-424e-b3d1-778a284729ec.png",
       description: "Responsável por abertura, alteração, regularização e baixa de empresas. Atua junto a órgãos públicos para garantir a conformidade legal do CNPJ, alvarás, licenças e registros necessários à atividade empresarial."
@@ -81,9 +86,15 @@ const Employees = () => {
                       {employee.name}
                     </h3>
                     
-                    <p className="text-blue-600 font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base xl:text-lg">
+                    <p className="text-blue-600 font-medium mb-1 text-xs sm:text-sm lg:text-base xl:text-lg">
                       {employee.position}
                     </p>
+                    
+                    {employee.crc && (
+                      <p className="text-blue-500 font-medium mb-2 text-xs sm:text-sm lg:text-base">
+                        {employee.crc}
+                      </p>
+                    )}
                     
                     <p className="text-blue-500 font-medium mb-2 sm:mb-3 lg:mb-4 text-xs sm:text-sm lg:text-base">
                       {employee.sector}
