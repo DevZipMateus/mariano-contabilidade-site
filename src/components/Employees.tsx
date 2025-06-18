@@ -47,14 +47,14 @@ const Employees = () => {
   ];
 
   return (
-    <section id="funcionarios" className="py-8 sm:py-12 lg:py-16 xl:py-20 2xl:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <section id="funcionarios" className="py-8 sm:py-12 lg:py-16 xl:py-20 2xl:py-24 bg-white">
       <div className="container mx-auto px-3 sm:px-4 lg:px-6 xl:px-8 2xl:px-12">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-3 sm:mb-4 lg:mb-6">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 lg:mb-6">
             Nossa Equipe
           </h2>
-          <div className="w-12 sm:w-16 lg:w-20 xl:w-24 2xl:w-32 h-1 bg-amber-500 mx-auto mb-3 sm:mb-4 lg:mb-6"></div>
-          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
+          <div className="w-12 sm:w-16 lg:w-20 xl:w-24 2xl:w-32 h-1 bg-blue-600 mx-auto mb-3 sm:mb-4 lg:mb-6"></div>
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
             Conheça os profissionais dedicados que fazem da Mariano Contabilidade 
             uma referência em atendimento humanizado e excelência contábil.
           </p>
@@ -62,10 +62,10 @@ const Employees = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 xl:gap-10">
           {employees.map(employee => (
-            <Card key={employee.id} className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-all duration-300 group h-full">
+            <Card key={employee.id} className="bg-white border-blue-200 hover:border-blue-400 transition-all duration-300 group h-full shadow-lg hover:shadow-xl">
               <CardContent className="p-3 sm:p-4 lg:p-6 xl:p-8 text-center h-full flex flex-col">
                 <div className="mb-3 sm:mb-4 lg:mb-6">
-                  <div className="w-16 sm:w-20 lg:w-24 xl:w-32 2xl:w-36 h-16 sm:h-20 lg:h-24 xl:h-32 2xl:h-36 mx-auto mb-2 sm:mb-3 lg:mb-4 rounded-lg overflow-hidden transition-all">
+                  <div className="w-16 sm:w-20 lg:w-24 xl:w-32 2xl:w-36 h-16 sm:h-20 lg:h-24 xl:h-32 2xl:h-36 mx-auto mb-2 sm:mb-3 lg:mb-4 rounded-lg overflow-hidden transition-all shadow-lg">
                     <img 
                       src={employee.image} 
                       alt={employee.name} 
@@ -77,20 +77,20 @@ const Employees = () => {
                 
                 <div className="flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-white mb-1 sm:mb-2">
+                    <h3 className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold text-gray-800 mb-1 sm:mb-2">
                       {employee.name}
                     </h3>
                     
-                    <p className="text-amber-400 font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base xl:text-lg">
+                    <p className="text-blue-600 font-medium mb-1 sm:mb-2 text-xs sm:text-sm lg:text-base xl:text-lg">
                       {employee.position}
                     </p>
                     
-                    <p className="text-amber-300 font-medium mb-2 sm:mb-3 lg:mb-4 text-xs sm:text-sm lg:text-base">
+                    <p className="text-blue-500 font-medium mb-2 sm:mb-3 lg:mb-4 text-xs sm:text-sm lg:text-base">
                       {employee.sector}
                     </p>
                   </div>
                   
-                  <p className="text-gray-300 text-xs sm:text-sm lg:text-base leading-relaxed">
+                  <p className="text-gray-600 text-xs sm:text-sm lg:text-base leading-relaxed">
                     {employee.description}
                   </p>
                 </div>
@@ -100,7 +100,7 @@ const Employees = () => {
         </div>
 
         <div className="text-center mt-6 sm:mt-8 lg:mt-12 xl:mt-16">
-          <p className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-300 italic">
+          <p className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-600 italic">
             "Uma equipe unida, comprometida com o seu sucesso"
           </p>
         </div>

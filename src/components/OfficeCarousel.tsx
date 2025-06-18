@@ -39,14 +39,14 @@ const OfficeCarousel = () => {
   }, [officeImages.length]);
 
   return (
-    <section id="escritorio" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <section id="escritorio" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Nosso Escritório
           </h2>
-          <div className="w-16 sm:w-24 h-1 bg-amber-500 mx-auto mb-4 sm:mb-6"></div>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
+          <div className="w-16 sm:w-24 h-1 bg-blue-600 mx-auto mb-4 sm:mb-6"></div>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Conheça nossa estrutura física e o ambiente onde trabalhamos 
             diariamente para oferecer o melhor atendimento contábil.
           </p>
@@ -65,7 +65,7 @@ const OfficeCarousel = () => {
                     display: index === currentIndex ? 'block' : 'none'
                   }}
                 >
-                  <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
+                  <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border border-blue-200">
                     <picture>
                       <source 
                         media="(max-width: 640px)" 
@@ -85,7 +85,7 @@ const OfficeCarousel = () => {
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
                       />
                     </picture>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
                   </div>
                 </CarouselItem>
               ))}
@@ -100,8 +100,8 @@ const OfficeCarousel = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 sm:w-3 h-2 sm:h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex 
-                    ? 'bg-amber-500 scale-110' 
-                    : 'bg-gray-500 hover:bg-amber-400'
+                    ? 'bg-blue-600 scale-110' 
+                    : 'bg-gray-400 hover:bg-blue-500'
                 }`}
                 aria-label={`Ir para imagem ${index + 1}`}
               />
@@ -110,7 +110,7 @@ const OfficeCarousel = () => {
         </div>
 
         <div className="text-center mt-8 sm:mt-12">
-          <p className="text-base sm:text-lg text-gray-300 italic">
+          <p className="text-base sm:text-lg text-gray-600 italic">
             "Um ambiente profissional e acolhedor para atender nossos clientes"
           </p>
         </div>
